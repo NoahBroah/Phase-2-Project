@@ -2,16 +2,17 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="contnent">
+    <div className="content hero container">
       <span className="title">Fullstack Devloper</span>
       <h1>
-        Hello, I'm <span>Noah King</span>
+        Hello, my name is <span>Noah King</span>
       </h1>
       <p>
         I'm working on a professional, visually sophisticated and
         technologically proficient, responsive and multi-functional React
         Components
       </p>
+      <a href="#" className="btn">Download CV</a>
     </div>
   );
 }

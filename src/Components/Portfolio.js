@@ -3,7 +3,7 @@ import Resume from "./Resume"
 
 function Portfolio() {
     return (
-        <div>
+        <div className="hero container">
             <h1>Portfolio</h1>
             <Resume />
         </div>

@@ -2,9 +2,9 @@ import React from "react";
 
 function Resume() {
     return(
-        <div>
+        <div className="hero container">
             <h1>My Resume Goes Here</h1>
-            <a href="#" className="btn">Download CV</a>
+            <a href="#" className="btn">Resume</a>
         </div>
     )
 }

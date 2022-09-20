@@ -14,14 +14,14 @@ function App() {
       .then((reviews) => setReviews(reviews));
   }, []);
 
-  // ReviewList --- HELP FROM TOYTALE LAB --- **WORKING
+  // ReviewList => Review   --- HELP FROM TOYTALE LAB --- WORKING ---
   function handleUpdateLikes(updatedLike) {
     const updatedLikes = reviews.map((review) => {
       return review.id === updatedLike.id ? updatedLike : review;
     })
     setReviews(updatedLikes)
   }
-// 
+// ReviewList => ReviewForm  --- WORKING ---
   function handleAddNewReview(review) {
     setReviews([...reviews, review])
   }
