@@ -13,8 +13,8 @@ function Review({ review, onClickBtn }) {
           body: JSON.stringify({ likes: likes + 1 })
         })
           .then((resp) => resp.json())
-          .then((updatedLikes) => {
-            onClickBtn(updatedLikes)
+          .then((updatedLike) => {
+            onClickBtn(updatedLike)
           });
     }
 

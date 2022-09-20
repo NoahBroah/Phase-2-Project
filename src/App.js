@@ -14,8 +14,14 @@ function App() {
       .then((reviews) => setReviews(reviews));
   }, []);
 
-  // ReviewList
-
+  // ReviewList --- HELP FROM TOYTALE LAB --- **WORKING
+  function handleUpdateLikes(updatedLike) {
+    const updatedLikes = reviews.map((review) => {
+      return review.id === updatedLike.id ? updatedLike : review;
+    })
+    setReviews(updatedLikes)
+  }
+// 
   function handleAddNewReview() {
 
   }
@@ -34,7 +40,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/reviewslist">
-          <ReviewsList handleAddNewReview={handleAddNewReview} reviews={reviews} />
+          <ReviewsList onClickBtn={handleUpdateLikes} handleAddNewReview={handleAddNewReview} reviews={reviews} />
         </Route>
       </Switch>
     </div>
