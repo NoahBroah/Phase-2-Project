@@ -4,15 +4,21 @@ import Home from "./Components/Home.js";
 import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
 import Navbar from "./Components/NavBar";
-import ReviewList from "./Components/ReviewsList";
+import ReviewsList from "./Components/ReviewsList";
 
 function App() {
-  const [formData, setFormData] = useState([])
+  const [reviews, setReviews] = useState([])
   useEffect(() => {
     fetch(" http://localhost:4000/Reviews")
       .then((resp) => resp.json())
-      .then((reviews) => setFormData(reviews));
+      .then((reviews) => setReviews(reviews));
   }, []);
+
+  // ReviewList
+
+  function handleAddNewReview() {
+
+  }
 
   return (
     <div className="hero">
@@ -28,7 +34,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/reviewslist">
-          <ReviewList formData={formData} />
+          <ReviewsList handleAddNewReview={handleAddNewReview} reviews={reviews} />
         </Route>
       </Switch>
     </div>
