@@ -22,8 +22,8 @@ function App() {
     setReviews(updatedLikes)
   }
 // 
-  function handleAddNewReview() {
-
+  function handleAddNewReview(review) {
+    setReviews([...reviews, review])
   }
 
   return (

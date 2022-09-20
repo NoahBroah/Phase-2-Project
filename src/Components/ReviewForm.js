@@ -7,6 +7,12 @@ function ReviewForm({ handleAddNewReview }) {
     comments: "",
   });
 
+  function handleChange(e) {
+    console.log(e.target.value)
+    setFormData({...formData,
+    [e.target.name]: e.target.value})
+  }
+
   function handleSubmit(e) {
     e.preventDefault()
 
@@ -27,15 +33,13 @@ function ReviewForm({ handleAddNewReview }) {
         setFormData(formData)
   }
 
-  function handleChange(e) {
-    console.log(e.target.value)
-  }
+ 
 
 
   return (
     <div className="container">
       <form onSubmit={handleSubmit}>
-        <h3>Create a toy!</h3>
+        <h3>Leave a review of my work!</h3>
         <input
           value={formData.name}
           type="text"
