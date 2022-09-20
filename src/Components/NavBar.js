@@ -6,16 +6,11 @@ function NavBar() {
     <div>
       <nav>
         <img src="NK-Logo.jpg" className="logo" />
-        <h2>Noah King</h2>
+        <h1><span>Noah King</span></h1>
         <ul>
           <li>
             <NavLink to="/" exact>
               Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" exact>
-              About
             </NavLink>
           </li>
           <li>

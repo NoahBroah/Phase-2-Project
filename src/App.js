@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./Components/Home.js";
-import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
 import Navbar from "./Components/NavBar";
 import ReviewsList from "./Components/ReviewsList";
@@ -30,9 +29,6 @@ function App() {
     <div className="hero">
       <Navbar />
       <Switch>
-        <Route exact path="/about">
-          <About />
-        </Route>
         <Route exact path="/portfolio">
           <Portfolio />
         </Route>
