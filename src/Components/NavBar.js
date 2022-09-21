@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faInstagram, faLinkedin, faMedium, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 function NavBar() {
   return (
@@ -15,6 +15,9 @@ function NavBar() {
         </a>
         <a href="https://github.com/NoahBroah">
           <FontAwesomeIcon icon={faInstagram} />
+        </a>
+        <a href="https://github.com/NoahBroah">
+          <FontAwesomeIcon icon={faMedium} />
         </a>
         <a href="https://github.com/NoahBroah">
           <FontAwesomeIcon icon={faTwitter} />

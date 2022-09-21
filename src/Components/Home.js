@@ -8,11 +8,13 @@ function Home() {
         Hello, my name is <span>Noah King</span>
       </h1>
       <p>
+        
+
         I'm working on a professional, visually sophisticated and
         technologically proficient, responsive and multi-functional React
         Components
       </p>
-      <a href="#" className="btn">Download CV</a>
+      <a href="resume.pdf" target="_blank" className="btn">Download CV</a>
     </div>
   );
 }
