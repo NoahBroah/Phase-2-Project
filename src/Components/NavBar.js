@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <div>
       <nav>
-        <img src="NK-Logo.jpg" className="logo" />
+        <img src="" className="logo" />
         <h1><span>Noah King</span></h1>
         <ul>
           <li>
