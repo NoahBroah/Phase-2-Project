@@ -1,6 +1,7 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import CardGroup from "react-bootstrap/CardGroup";
 
 
 
@@ -21,7 +22,8 @@ function Review({ review, onClickBtn }) {
       });
   }
   return (
-    <Card style={{ width: '18rem' }}>
+    <div className="card-group">
+      <Card border="light" style={{ width: '18rem' }}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
@@ -29,9 +31,11 @@ function Review({ review, onClickBtn }) {
           {comments}
         </Card.Text>
         <Card.Text>Likes: {likes}</Card.Text>
-        <Button onClick={handleClick} variant="primary">like!</Button>
+        <Button onClick={handleClick} variant="outline-danger">like!</Button>
       </Card.Body>
     </Card>
+    </div>
+    
   );
 
 }

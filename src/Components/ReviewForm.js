@@ -39,7 +39,7 @@ function ReviewForm({ handleAddNewReview }) {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group>
         <Form.Label>Name:</Form.Label>
         <Form.Control
           type="text"
@@ -67,12 +67,11 @@ function ReviewForm({ handleAddNewReview }) {
           name="comments"
           placeholder="Leave your review here"
           onChange={handleChange}
+          rows={3}
+          as="textarea"
         />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button variant="outline-dark" type="submit">
         Submit Review
       </Button>
     </Form>

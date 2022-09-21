@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Review from "./Review";
 import ReviewForm from "./ReviewForm";
+import Button from "react-bootstrap/Button";
+import CardGroup from "react-bootstrap/CardGroup";
 
 function ReviewList({ reviews, onClickBtn, handleAddNewReview }) {
   const [showForm, setShowForm] = useState(false);
@@ -17,10 +19,17 @@ function ReviewList({ reviews, onClickBtn, handleAddNewReview }) {
     <div className="container">
       {showForm ? <ReviewForm handleAddNewReview={handleAddNewReview} /> : null}
       <div>
-        <button onClick={handleFormClick}>Add a new comment</button>
+        <Button
+          variant="outline-danger"
+          type="button"
+          onClick={handleFormClick}
+        >
+          Add a new comment
+        </Button>
       </div>
-
-      {reviewList}
+      <div className="card-group">
+        {reviewList}
+      </div>
     </div>
   );
 }

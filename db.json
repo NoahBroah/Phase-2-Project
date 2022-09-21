@@ -4,15 +4,22 @@
       "id": 1,
       "name": "Joe Brown",
       "image": "https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U",
-      "likes": 11,
+      "likes": 13,
       "comments": "So talented and efficient!"
     },
     {
       "id": 2,
       "name": "Steve Jobs",
-      "image": "https://i.picsum.photos/id/361/200/300.jpg?grayscale&hmac=ik-Wl44DGtZSw-iltrmgKgyaarAKYSmLZNzPNQW5_q8",
-      "likes": 100,
+      "image": "https://cdn.profoto.com/cdn/053149e/contentassets/d39349344d004f9b8963df1551f24bf4/profoto-albert-watson-steve-jobs-pinned-image-original.jpg?width=1280&quality=75&format=jpg",
+      "likes": 101,
       "comments": "You did a great job on that last project!"
+    },
+    {
+      "name": "Brad Pitt",
+      "image": "https://www.themoviedb.org/t/p/original/tJiSUYst4ddIaz1zge2LqCtu9tw.jpg",
+      "comments": "Me and Noah worked together on a small project, and he absolutely crushed it!",
+      "likes": 2,
+      "id": 3
     }
   ]
 }
