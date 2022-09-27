@@ -1,7 +1,6 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import CardGroup from "react-bootstrap/CardGroup";
 
 
 
@@ -23,7 +22,7 @@ function Review({ review, onClickBtn }) {
   }
   return (
     <div className="card-group">
-      <Card border="light" style={{ width: '18rem' }}>
+      <Card border="light" style={{ width: '15rem' }}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>

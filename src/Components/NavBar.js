@@ -1,27 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faLinkedin, faMedium, faTwitter } from "@fortawesome/free-brands-svg-icons"
+
 
 function NavBar() {
   return (
     <div>
-      <nav className="logo">
-        <a href="https://github.com/NoahBroah">
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a href="https://github.com/NoahBroah">
-          <FontAwesomeIcon icon={faLinkedin} />
-        </a>
-        <a href="https://github.com/NoahBroah">
-          <FontAwesomeIcon icon={faInstagram} />
-        </a>
-        <a href="https://github.com/NoahBroah">
-          <FontAwesomeIcon icon={faMedium} />
-        </a>
-        <a href="https://github.com/NoahBroah">
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
+      <nav>
+      <iframe className="logo" src="https://embed.lottiefiles.com/animation/117571"></iframe>
         <h1><span>Noah King</span></h1>
         <ul>
           <li>
@@ -36,7 +21,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink to="/reviewslist" exact>
-              Reviews
+              Testimonials
             </NavLink>
           </li>
         </ul>

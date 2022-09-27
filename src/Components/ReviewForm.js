@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const initialForm = {
   name: "",
@@ -47,6 +50,7 @@ function ReviewForm({ handleAddNewReview }) {
           name="name"
           placeholder="Enter First and Last Name"
           onChange={handleChange}
+          required
         />
       </Form.Group>
       <Form.Group>
@@ -60,15 +64,16 @@ function ReviewForm({ handleAddNewReview }) {
         />
       </Form.Group>
       <Form.Group>
-        <Form.Label>Comments:</Form.Label>
+        <Form.Label>Feedback:</Form.Label>
         <Form.Control
           type="text"
           value={formData.comments}
           name="comments"
           placeholder="Leave your review here"
           onChange={handleChange}
-          rows={3}
+          rows={4}
           as="textarea"
+          required
         />
       </Form.Group>
       <Button variant="outline-dark" type="submit">
@@ -77,46 +82,6 @@ function ReviewForm({ handleAddNewReview }) {
     </Form>
   );
 
-  // return (
-  //   <div className="container">
-  //     <form onSubmit={handleSubmit}>
-  //       <h3>Leave a review of my work!</h3>
-  //       <input
-  //         value={formData.name}
-  //         type="text"
-  //         name="name"
-  //         placeholder="Enter your name..."
-  //         className="input-text"
-  //         onChange={handleChange}
-  //       />
-  //       <br />
-  //       <input
-  //         value={formData.image}
-  //         type="text"
-  //         name="image"
-  //         placeholder="Enter a profile image URL..."
-  //         className="input-text"
-  //         onChange={handleChange}
-  //       />
-  //       <br />
-  //       <input
-  //         value={formData.comments}
-  //         type="text"
-  //         name="comments"
-  //         placeholder="Enter your comments"
-  //         className="input-text"
-  //         onChange={handleChange}
-  //       />
-  //       <br />
-  //       <input
-  //         type="submit"
-  //         name="submit"
-  //         value="Create New Review"
-  //         className="submit"
-  //       />
-  //     </form>
-  //   </div>
-  // );
 }
 
 export default ReviewForm;

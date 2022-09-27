@@ -13,7 +13,7 @@ a {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url();
+  /* background:; */
   background-size: cover;
 }
 nav {
@@ -108,4 +108,12 @@ nav ul li a:hover:after {
   color: #202020;
   margin-top: 25px;
   margin-bottom: 30px;
+}
+
+.social-media-icons {
+  width: auto;
+  margin-top: 100px;
+  display:inline-block;
+  padding: 5px 10px;
+
 }
