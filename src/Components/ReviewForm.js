@@ -28,7 +28,7 @@ function ReviewForm({ handleAddNewReview }) {
       likes: 0,
     };
 
-    fetch("https://morning-brook-09441.herokuapp.com/Reviews", {
+    fetch("http://localhost:3000/Reviews", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

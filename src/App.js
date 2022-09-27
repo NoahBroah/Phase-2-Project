@@ -8,7 +8,7 @@ import ReviewsList from "./Components/ReviewsList";
 function App() {
   const [reviews, setReviews] = useState([])
   useEffect(() => {
-    fetch("https://morning-brook-09441.herokuapp.com/Reviews")
+    fetch("http://localhost:3000/Reviews")
       .then((resp) => resp.json())
       .then((reviews) => setReviews(reviews));
   }, []);
