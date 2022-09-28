@@ -7,9 +7,6 @@ import {
   faMedium,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 function Resume() {
   return (
@@ -27,16 +24,16 @@ function Resume() {
         <a className="social-media-icons" href="https://github.com/NoahBroah">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a className="social-media-icons" href="https://github.com/NoahBroah">
+        <a className="social-media-icons" href="https://www.linkedin.com/in/noah-king-780410166/">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a className="social-media-icons" href="https://github.com/NoahBroah">
+        <a className="social-media-icons" href="https://www.instagram.com/noah_broah/">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a className="social-media-icons" href="https://github.com/NoahBroah">
+        <a className="social-media-icons" href="https://medium.com/@noahking123">
           <FontAwesomeIcon icon={faMedium} />
         </a>
-        <a className="social-media-icons" href="https://github.com/NoahBroah">
+        <a className="social-media-icons" href="https://twitter.com/Noah_Broah">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
       </div>
