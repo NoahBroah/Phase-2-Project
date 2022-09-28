@@ -8,7 +8,7 @@ function Review({ review, onClickBtn }) {
   const { name, comments, likes, image, id } = review;
 
   function handleClick() {
-    fetch(`http://localhost:4000/Reviews/${id}`, {
+    fetch(`http://localhost:3000/Reviews/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
