@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "./Resume";
+import Links from "./Links";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -19,7 +19,7 @@ function Portfolio() {
                 <li>Knowledge of JavaScript, HTML, CSS and React</li>
               </ul>
             </h4>
-            <Resume />
+            <Links />
           </div>
         </Col>
       </Row>

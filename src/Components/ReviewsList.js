@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import Review from "./Review";
 import ReviewForm from "./ReviewForm";
 import Button from "react-bootstrap/Button";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 
 
 function ReviewList({ reviews, onClickBtn, handleAddNewReview }) {
